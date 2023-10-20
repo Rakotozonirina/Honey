@@ -66,3 +66,10 @@ body::-webkit-scrollbar-thumb {
 .span-hero{
   padding: min(0.3rem, 0.5rem);
 }
+.hero-desc{
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+.para-desc{
+  font-size: clamp(17px, 2vw + 1rem, 20px);
+}
