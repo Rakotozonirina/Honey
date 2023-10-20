@@ -1,11 +1,12 @@
 import react from 'react'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h2 className='text-base font-enriquetaregular'>Tantely</h2>
+      <Navbar/>
     </>
   )
 }

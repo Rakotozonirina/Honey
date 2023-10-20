@@ -34,3 +34,10 @@
   font-family: "EnriquetaRegular";
   src: url("./assets/Enriqueta-Regular.ttf");
 }
+.navbar{
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+.nav-ul > *{
+  font-size: clamp(17px, 1rem, 1.25rem);
+}
