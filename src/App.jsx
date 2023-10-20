@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      
+      <h2 className='text-base font-enriquetaregular'>Tantely</h2>
     </>
   )
 }

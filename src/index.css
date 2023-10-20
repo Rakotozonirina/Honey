@@ -2,4 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face{
+  font-family: "InikaBold";
+  src: url("./assets/Inika-Bold.ttf");
+}
+@font-face{
+  font-family: "InikaRegular";
+  src: url("./assets/Inika-Regular.ttf");
+}
+@font-face{
+  font-family: "Esteban";
+  src: url("./assets/Esteban-Regular.ttf");
+}
+@font-face{
+  font-family: "Epilogue";
+  src: url("./assets/Epilogue-VariableFont_wght.ttf");
+}
+@font-face{
+  font-family: "EnriquetaBold";
+  src: url("./assets/Enriqueta-Bold.ttf");
+}
+@font-face{
+  font-family: "EnriquetaSemiBold";
+  src: url("./assets/Enriqueta-SemiBold.ttf");
+}
+@font-face{
+  font-family: "EnriquetaMedium";
+  src: url("./assets/Enriqueta-Medium.ttf");
+}
+@font-face{
+  font-family: "EnriquetaRegular";
+  src: url("./assets/Enriqueta-Regular.ttf");
+}

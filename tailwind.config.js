@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inikabold: ['InikaBold', 'sans-serif'],
+        inikaregular: ['InikaRegular', 'sans-serif'],
+        esteban: ['Esteban', 'sans-serif'],
+        epilogue: ['Epilogue', 'sans-serif'],
+        enriquetabold: ['EnriquetaBold', 'sans-serif'],
+        enriquetasemibold: ['EnriquetaSemiBold', 'sans-serif'],
+        enriquetamedium: ['EnriquetaMedium', 'sans-serif'],
+        enriquetaregular: ['EnriquetaRegular', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
