@@ -76,3 +76,25 @@ body::-webkit-scrollbar-thumb {
 .para-desc{
   font-size: clamp(17px, 2vw + 1rem, 20px);
 }
+.education{
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+.heading-educ{
+  font-size: clamp(40px, 2vw + 1rem, 64px);
+}
+.heading-two-education{
+  font-size: clamp(20px, 2vw + 1rem, 32px);
+}
+.para-one-education{
+  font-size: clamp(20px, 2vw + 1rem, 24px);
+}
+/*.nice{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}*/
+/*.nice-child{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}*/
+.nice{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
