@@ -66,6 +66,9 @@ body::-webkit-scrollbar-thumb {
 .span-hero{
   padding: min(0.3rem, 0.5rem);
 }
+.section-desc{
+  padding-block: min(4rem, 8rem);
+}
 .hero-desc{
   width: min(90%, 1200px);
   margin-inline: auto;
