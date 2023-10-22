@@ -98,6 +98,44 @@ body::-webkit-scrollbar-thumb {
 .nice{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+@media (min-width:0px) and (max-width: 640px){
+  .skill-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-section > *{ 
+    height: 25dvh;
+  }
+}
+.skill-section > *:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.skill-section > *:nth-child(2){
+  display: flex;
+  align-items: center;
+}
+.skill-section > *:nth-child(3){
+  display: flex;
+  align-items: center;
+}
+.skill-section > *:nth-child(4){
+  display: flex;
+  align-items: center;
+}
+.skill{
+  width: min(50%);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width:640px) and (max-width: 768px){
+  .skill-section{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
 @media (min-width:768px) and (max-width: 1024px){
   .child-article{
     width: min(90%, 900px);
@@ -106,6 +144,9 @@ body::-webkit-scrollbar-thumb {
   .btn-article{
     width: min(90%);
     margin-inline: auto;
+  }
+  .skill-section{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
 @media (min-width:1024px) and (max-width: 1280px){
@@ -127,4 +168,12 @@ body::-webkit-scrollbar-thumb {
     width: min(90%);
     margin-inline: auto;
   }
+}
+.skill-article{
+  width: min(90%, 900px);
+  margin-inline: auto;
+}
+.skill-section{
+  width: min(90%, 1280px);
+  margin-inline: auto;
 }

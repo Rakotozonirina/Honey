@@ -2,6 +2,14 @@ import React from 'react'
 import Github from '../assets/github.png'
 import Linkdeen from '../assets/linkdeen.png'
 import Hero from '../assets/hero.png'
+import CircleOne from '../assets/circleOne.svg'
+import CircleTwo from '../assets/circleTwo.svg'
+import CircleThree from '../assets/circleThree.svg'
+import SeparatorBlack from '../assets/separatorBlack.png'
+import Figma from '../assets/figma.svg'
+import Xd from '../assets/xd.png'
+import Html from '../assets/html.svg'
+import Css from '../assets/css.svg'
 
 function Main() {
 return (
@@ -33,12 +41,18 @@ return (
             </article>
         </section>
     </section>
-    <section className='w-full h-[100dvh] relative border border-red-400'>
-        <section className='education border border-green-400 h-[100dvh]'>
-            <article className='border border-violet-400 flex items-center justify-center w-full h-[25dvh]'>
+    <section className='w-full h-[100dvh] relative'>
+        <section className='education h-[100dvh]'>
+            <article className='relative flex items-center justify-center w-full h-[25dvh]'>
+                <div className='max-sm:scale-[0.8] max-sm:left-[-10%] sm:max-md:scale-[0.7] absolute md:max-lg:scale-[0.8] lg:max-xl:scale-[0.9] top-[4%] left-0'>
+                    <img src={CircleOne} alt=" circle one" />
+                </div>
                 <h1 className='font-epilogue heading-educ'>Educations</h1>
             </article>
-            <article className='border border-yellow-400 grid nice w-full h-[60dvh]'>
+            <div className='max-sm:scale-[0.8] max-sm:left-[-22%] max-sm:z-[-10] sm:max-md:left-[-18%] sm:max-md:z-[-10] sm:max-md:scale-[0.6] md:max-lg:scale-[0.7] md:max-lg:left-[-18%] lg:max-xl:scale-[0.8] lg:max-xl:left-[-14%] absolute left-[-6%] top-[14%]'>
+                <img src={CircleTwo} alt="circle two"/>
+            </div>
+            <article className='grid nice w-full h-[60dvh]'>
                     <div className='flex max-sm:flex-col max-sm:justify-around sm:max-md:justify-around sm:max-md:flex-col'>
                     <article className='md:max-lg:w-[80%] lg:max-xl:w-[80%] xl:w-[80%] xl:flex xl:items-center lg:max-xl:flex lg:max-xl:items-center md:max-lg:flex md:max-lg:items-center'>
                         <div className='child-article'>
@@ -70,10 +84,62 @@ return (
                     </div>
                     </div>
             </article>
-            <div className='border border-amber-400 h-[15dvh]'>
-
+            <div className='flex justify-center items-center h-[15dvh]'>
+                <div className='w-fit'>
+                    <img src={SeparatorBlack} alt="Separator Black" />
+                </div>
             </div>
         </section>
+    </section>
+    <section className='w-full h-[80dvh] relative max-sm:h-[130dvh]'>
+        <article className='skill-article h-[20dvh] flex justify-center items-center'>
+            <h2 className='font-epilogue heading-educ'>Mes compétences</h2>
+        </article>
+        <section className='skill-section grid grid-cols-4 h-[60dvh] max-sm:h-[110dvh] gap-4 max-sm:gap-4'>
+            <div>
+                <section className='skill'>
+                    <div>
+                        <img src={Figma} alt="figma" />
+                    </div>
+                    <article>
+                        <h2 className='text-[1.5rem] font-epilogue'>Figma</h2>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <section className='skill'>
+                    <div>
+                        <img src={Xd} alt="xd" />
+                    </div>
+                    <article>
+                        <h2 className='text-[1.5rem] font-epilogue'>Adobe XD</h2>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <section className='skill'>
+                    <div>
+                        <img src={Html} alt="html" />
+                    </div>
+                    <article>
+                        <h2 className='text-[1.5rem] font-epilogue'>HTML</h2>
+                    </article>
+                </section>
+            </div>
+            <div>
+                <section className='skill'>
+                    <div>
+                        <img src={Css} alt="css" />
+                    </div>
+                    <article>
+                        <h2 className='text-[1.5rem] font-epilogue'>CSS</h2>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <div className='absolute bottom-[10%] right-0'>
+            <img src={CircleThree} alt="circle three" />
+        </div>
     </section>
     </main>
     
