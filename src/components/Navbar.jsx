@@ -14,7 +14,7 @@ return (
                 <img src={Logo} alt="logo" className='h-[10dvh] logo' />
             </div>
             <div>
-                <ul className={`flex items-center ${show ? 'max-sm:text-center max-sm:flex max-sm:flex-col max-sm:fixed max-sm:p-[5rem] max-sm:top-0 max-sm:bottom-0 max-sm:right-0 max-sm:bg-amber-400' : 'max-sm:hidden'} gap-2 p-1.5 uppercase font-inikaregular nav-ul`}>
+                <ul className={`flex items-center ${show ? 'max-sm:text-center max-sm:flex max-sm:flex-col max-sm:fixed max-sm:p-[5rem] max-sm:z-[10] max-sm:top-0 max-sm:bottom-0 max-sm:right-0 max-sm:bg-amber-400' : 'max-sm:hidden'} gap-2 p-1.5 uppercase font-inikaregular nav-ul`}>
                     <li>à propos de moi</li>
                     <li>mes projets</li>
                     <li>contacts</li>
