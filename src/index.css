@@ -98,3 +98,33 @@ body::-webkit-scrollbar-thumb {
 .nice{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+@media (min-width:768px) and (max-width: 1024px){
+  .child-article{
+    width: min(90%, 900px);
+    margin-inline: auto;
+  }
+  .btn-article{
+    width: min(90%);
+    margin-inline: auto;
+  }
+}
+@media (min-width:1024px) and (max-width: 1280px){
+  .child-article{
+    width: min(90%, 900px);
+    margin-inline: auto;
+  }
+  .btn-article{
+    width: min(90%);
+    margin-inline: auto;
+  }
+}
+@media (min-width:1280px){
+  .child-article{
+    width: min(70%, 900px);
+    margin-inline: auto;
+  }
+  .btn-article{
+    width: min(90%);
+    margin-inline: auto;
+  }
+}
