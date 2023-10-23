@@ -135,6 +135,9 @@ body::-webkit-scrollbar-thumb {
   .skill-section{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
+  .competence-section{
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+  }
 }
 @media (min-width:768px) and (max-width: 1024px){
   .child-article{
@@ -148,6 +151,9 @@ body::-webkit-scrollbar-thumb {
   .skill-section{
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
+  .competence-section{
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
 }
 @media (min-width:1024px) and (max-width: 1280px){
   .child-article{
@@ -157,6 +163,9 @@ body::-webkit-scrollbar-thumb {
   .btn-article{
     width: min(90%);
     margin-inline: auto;
+  }
+  .competence-section{
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
 }
 @media (min-width:1280px){
@@ -168,6 +177,11 @@ body::-webkit-scrollbar-thumb {
     width: min(90%);
     margin-inline: auto;
   }
+  .competence-section{
+    width: min(90%, 1280px);
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
 }
 .skill-article{
   width: min(90%, 900px);
@@ -175,5 +189,22 @@ body::-webkit-scrollbar-thumb {
 }
 .skill-section{
   width: min(90%, 1280px);
+  margin-inline: auto;
+}
+.competence-article{
+  width: min(90%, 900px);
+  margin-inline: auto;
+}
+.competence-heading{
+  font-size: clamp(40px, 2vw + 1rem, 64px);
+}
+.competence-div{
+  width: min(100%);
+}
+.card-heading{
+  font-size: clamp(17px, 2vw + 1rem, 20px);
+}
+.nice-card{
+  width: min(80%, 90%);
   margin-inline: auto;
 }

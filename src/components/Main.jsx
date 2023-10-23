@@ -10,6 +10,7 @@ import Figma from '../assets/figma.svg'
 import Xd from '../assets/xd.png'
 import Html from '../assets/html.svg'
 import Css from '../assets/css.svg'
+import Card from './Card'
 
 function Main() {
 return (
@@ -140,6 +141,14 @@ return (
         <div className='absolute bottom-[10%] right-0'>
             <img src={CircleThree} alt="circle three" />
         </div>
+    </section>
+    <section className='w-full h-[150dvh] lg:max-xl:h-[200dvh] md:max-lg:h-[200dvh] sm:max-md:h-[400dvh] max-sm:h-[400dvh] bg-stone-200 bg-opacity-80'>
+        <article className='competence-article flex justify-center items-center h-[20dvh]'>
+            <h2 className='competence-heading font-epilogue'>Mes projets</h2>
+        </article>
+        <section className='h-[130dvh] lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
+            <Card/>
+        </section>
     </section>
     </main>
     
