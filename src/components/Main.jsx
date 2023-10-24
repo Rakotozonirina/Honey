@@ -11,6 +11,7 @@ import Xd from '../assets/xd.png'
 import Html from '../assets/html.svg'
 import Css from '../assets/css.svg'
 import Card from './Card'
+import { Contact } from './Contact'
 
 function Main() {
 return (
@@ -148,6 +149,15 @@ return (
         </article>
         <section className='h-[130dvh] lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
             <Card/>
+        </section>
+    </section>
+    <section className="w-full h-[70dvh] max-sm:h-[80dvh] sm:max-md:h-[80dvh] flex justify-center items-center">
+        <section className='nice-contact grid  max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
+            <article>
+                <h2 className='font-semibold font-epilogue text-[1.5rem]'>Travaillons ensemble</h2>
+                <p className='font-epilogue text-[17px]'>Si vous souhaitez collaborer avec Moi, n'hésitez pas à me contacter à toute date et heure qui vous conviennent le mieux</p>
+            </article>
+            <Contact/>
         </section>
     </section>
     </main>

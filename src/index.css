@@ -106,6 +106,10 @@ body::-webkit-scrollbar-thumb {
   .skill-section > *{ 
     height: 25dvh;
   }
+  .nice-contact{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .skill-section > *:nth-child(1){
   display: flex;
@@ -137,6 +141,10 @@ body::-webkit-scrollbar-thumb {
   }
   .competence-section{
     grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+  }
+  .nice-contact{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width:768px) and (max-width: 1024px){
@@ -206,5 +214,16 @@ body::-webkit-scrollbar-thumb {
 }
 .nice-card{
   width: min(80%, 90%);
+  margin-inline: auto;
+}
+.textarea-contact{
+  resize: none;
+}
+.nice-contact{
+  width: min(90%, 1280px);
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+.contact-div{
   margin-inline: auto;
 }
