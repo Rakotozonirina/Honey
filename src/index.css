@@ -34,6 +34,10 @@
   font-family: "EnriquetaRegular";
   src: url("./assets/Enriqueta-Regular.ttf");
 }
+@font-face{
+  font-family: "NunitoVariable";
+  src: url("./assets/Nunito-VariableFont_wght.ttf");
+}
 .navbar{
   width: min(90%, 1200px);
   margin-inline: auto;
@@ -226,4 +230,11 @@ body::-webkit-scrollbar-thumb {
 }
 .contact-div{
   margin-inline: auto;
+}
+.footer-div{
+  width: min(90%);
+  margin-inline: auto;
+}
+.footer-para{
+  font-size: clamp(16px, 2vw + 1rem, 17px);
 }

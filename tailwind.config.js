@@ -15,6 +15,7 @@ export default {
         enriquetasemibold: ['EnriquetaSemiBold', 'sans-serif'],
         enriquetamedium: ['EnriquetaMedium', 'sans-serif'],
         enriquetaregular: ['EnriquetaRegular', 'sans-serif'],
+        nunito: ['NunitoVariable', 'sans-serif']
       }
     },
   },
