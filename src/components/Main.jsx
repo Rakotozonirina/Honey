@@ -43,7 +43,7 @@ return (
             </article>
         </section>
     </section>
-    <section className='w-full h-[100dvh] relative'>
+    <section className='w-full h-[100dvh] relative' id="about">
         <section className='education h-[100dvh]'>
             <article className='relative flex items-center justify-center w-full h-[25dvh]'>
                 <div className='max-sm:scale-[0.8] max-sm:left-[-10%] sm:max-md:scale-[0.7] absolute md:max-lg:scale-[0.8] lg:max-xl:scale-[0.9] top-[4%] left-0'>
@@ -143,7 +143,7 @@ return (
             <img src={CircleThree} alt="circle three" />
         </div>
     </section>
-    <section className='w-full h-[150dvh] lg:max-xl:h-[200dvh] md:max-lg:h-[200dvh] sm:max-md:h-[400dvh] max-sm:h-[400dvh] bg-stone-200 bg-opacity-80'>
+    <section className='w-full h-[150dvh] lg:max-xl:h-[200dvh] md:max-lg:h-[200dvh] sm:max-md:h-[400dvh] max-sm:h-[400dvh] bg-stone-200 bg-opacity-80' id='project'>
         <article className='competence-article flex justify-center items-center h-[20dvh]'>
             <h2 className='competence-heading font-epilogue'>Mes projets</h2>
         </article>
@@ -151,7 +151,7 @@ return (
             <Card/>
         </section>
     </section>
-    <section className="w-full h-[70dvh] max-sm:h-[80dvh] sm:max-md:h-[80dvh] flex justify-center items-center">
+    <section className="w-full h-[70dvh] max-sm:h-[80dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
         <section className='nice-contact grid  max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
             <article>
                 <h2 className='font-semibold font-epilogue text-[1.5rem]'>Travaillons ensemble</h2>
