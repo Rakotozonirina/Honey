@@ -3,12 +3,14 @@ import Navbar from './components/Navbar'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Loading from './components/Loading'
+import { motion, useScroll } from "framer-motion"
 import './App.css'
 
 
 function App() {
     const [scrollTop, setScrollTop] = useState(false);
     const [loading, setLoading] = useState(true);
+    const { scrollYProgress } = useScroll();
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if(window.pageYOffset > 340){
@@ -33,6 +35,7 @@ function App() {
     return (
         <>
             {loading ? (<Loading/>):( <>
+            <motion.div className="w-screen h-2 bg-stone-200 fixed top-0 z-20" style={{ scaleX: scrollYProgress, transformOrigin: "left" }} />
             <Navbar/>
             <Main/>
             <Footer/>
