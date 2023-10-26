@@ -31,7 +31,7 @@ return (
                 </div>
             </article>
             <div>
-                <img src={Hero} alt="hero" />
+                <img src={Hero} alt="hero" className='animationHero' />
             </div>
         </section>
         <section className='w-full flex justify-center items-center bg-amber-500 section-desc'>
