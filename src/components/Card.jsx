@@ -6,6 +6,7 @@ import ProjetFour from '../assets/projet_four.png'
 import ProjetFive from '../assets/projet_five.png'
 import ProjetSix from '../assets/projet_six.png' 
 import Modal from './Modal'
+import { motion } from 'framer-motion'
 
 const Datas = [
     {
@@ -64,7 +65,7 @@ return (
     <>
         {Datas.map((Data) => (
             <div className='competence-div h-[60dvh]' key={Data.id}>
-            <div className='nice-card cursor-pointer' onClick={() => openModal(Data.id)}>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='nice-card cursor-pointer' onClick={() => openModal(Data.id)}>
                 <div className='w-full'>
                     <img src={Data.image} alt={Data.alt} className='h-[40dvh] sm:max-md:w-[100dvw] max-sm:w-[100dvw] w-[100dvw] object-cover' />
                 </div>
@@ -72,7 +73,7 @@ return (
                     <h2 className='font-epilogue card-heading'>{Data.title}</h2>
                     <p className='font-epilogue card-para'>{Data.para}</p>
                 </article>
-            </div>
+            </motion.div>
         </div>
         ))}
         {Datas.map((Data) => (
