@@ -28,7 +28,7 @@ return (
                 <input type="email" name="user_email" placeholder='Email' className='bg-zinc-300 outline-none p-2.5' required />
                 <textarea name="message" placeholder='Message' className='bg-zinc-300 outline-none textarea-contact p-3' required />
                 <div className='w-full h-[10dvh] '>
-                    <input type="submit" value="Submit" className='text-white bg-black font-epilogue cursor-pointer py-2.5 px-4' />
+                    <input type="submit" value="Submit" className='text-white bg-black duration-75 hover:rounded-xl hover:shadow-xl font-epilogue cursor-pointer py-2.5 px-4' />
                 </div>
             </motion.form>
         </div>
