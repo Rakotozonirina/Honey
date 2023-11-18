@@ -24,10 +24,14 @@ return (
                 <p className='font-inikaregular para-hero drop-shadow-lg headingOne'>UI & UX Designer</p>
                 <div className='w-full flex justify-around items-center h-[16dvh] headingOne'>
                     <div className='span-hero w-fit bg-zinc-300 cursor-pointer hover:bg-zinc-400 hover:rounded-xl duration-75'>
-                        <img src={Github} alt="github" />
+                        <a href="https://github.com/NOMENJANAHARYTantely">
+                            <img src={Github} alt="github" />
+                        </a>
                     </div>
                     <div className='span-hero w-fit bg-zinc-300 cursor-pointer hover:bg-zinc-400 hover:rounded-xl duration-75'>
-                        <img src={Linkdeen} alt="linkdeen" />
+                        <a href="https://www.linkedin.com/in/mamy-nomenjanahary-057585255/">
+                            <img src={Linkdeen} alt="linkdeen" />
+                        </a>
                     </div>
                 </div>
             </article>
