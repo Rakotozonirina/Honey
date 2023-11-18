@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100dvh;
+  max-width: 100%;
+}
+
 @font-face{
   font-family: "InikaBold";
   src: url("./assets/Inika-Bold.ttf");
