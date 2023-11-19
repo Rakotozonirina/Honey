@@ -337,12 +337,18 @@ body::-webkit-scrollbar-thumb {
   .competence{
     max-width: 100%;
     display: block;
-    height: 15dvh;
+    height: 20dvh;
   } 
   .card-article{
     padding-block: 1rem;
   }
   .contact{
+    height: 140dvh;
+  }
+  .skills{
     height: 100dvh;
+  }
+  #about{
+    height: 120dvh;
   }
 }

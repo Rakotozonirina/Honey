@@ -98,7 +98,7 @@ return (
             </div>
         </section>
     </section>
-    <section className='w-full h-[80dvh] relative max-sm:h-[130dvh]'>
+    <section className='w-full h-[80dvh] skills relative max-sm:h-[130dvh]'>
         <article className='skill-article h-[20dvh] flex justify-center items-center'>
             <motion.h2 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='font-epilogue drop-shadow-lg heading-educ'>Mes compétences</motion.h2>
         </article>
