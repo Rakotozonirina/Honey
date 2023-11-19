@@ -328,3 +328,21 @@ body::-webkit-scrollbar-thumb {
 		transform: translateY(0px);
 	}
 }
+@media (max-height: 390px){
+  .animationHero{
+    max-width: 100%;
+    display: block;
+    height: 50dvh;
+  }
+  .competence{
+    max-width: 100%;
+    display: block;
+    height: 15dvh;
+  } 
+  .card-article{
+    padding-block: 1rem;
+  }
+  .contact{
+    height: 100dvh;
+  }
+}

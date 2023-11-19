@@ -17,7 +17,7 @@ import { motion } from 'framer-motion'
 function Main() {
 return (
     <main>
-    <section className='w-full h-[auto] max-sm:h-[auto] sm:max-md:h-[auto] md:max-lg:h-[auto] bg-gradient-to-l from-amber-500 to-white'>
+    <section className='w-full super-hero h-[auto] max-sm:h-[auto] sm:max-md:h-[auto] md:max-lg:h-[auto] bg-gradient-to-l from-amber-500 to-white'>
         <section className='hero h-[84dvh] max-sm:flex-col max-sm:h-[120dvh] sm:max-md:h-[130dvh] md:max-lg:h-[120dvh] sm:max-md:flex-col md:max-lg:flex-col flex justify-around items-center'>
             <article>
                 <h1 className='heading-hero drop-shadow-lg font-inikabold headingOne'>RAHAJANIRINA <br /> Nomenjanahary Tantely</h1>
@@ -106,7 +106,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Figma} alt="figma" />
+                        <img src={Figma} alt="figma" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>Figma</h2>
@@ -116,7 +116,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Xd} alt="xd" />
+                        <img src={Xd} alt="xd" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>Adobe XD</h2>
@@ -126,7 +126,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Html} alt="html" />
+                        <img src={Html} alt="html" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>HTML</h2>
@@ -136,7 +136,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Css} alt="css" />
+                        <img src={Css} alt="css" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>CSS</h2>
@@ -156,7 +156,7 @@ return (
             <Card/>
         </section>
     </section>
-    <section className="w-full h-[70dvh] max-sm:border max-sm:h-[100dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
+    <section className="w-full h-[70dvh] contact max-sm:h-[100dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
         <section className='nice-contact grid max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
             <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                 <h2 className='font-semibold font-epilogue text-[1.5rem] drop-shadow-lg'>Travaillons ensemble</h2>
