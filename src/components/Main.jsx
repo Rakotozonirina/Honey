@@ -156,8 +156,8 @@ return (
             <Card/>
         </section>
     </section>
-    <section className="w-full h-[70dvh] max-sm:h-[80dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
-        <section className='nice-contact grid  max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
+    <section className="w-full h-[70dvh] max-sm:border max-sm:h-[100dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
+        <section className='nice-contact grid max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
             <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                 <h2 className='font-semibold font-epilogue text-[1.5rem] drop-shadow-lg'>Travaillons ensemble</h2>
                 <p className='font-epilogue text-[17px]'>Si vous souhaitez collaborer avec Moi, n'hésitez pas à me contacter à toute date et heure qui vous conviennent le mieux</p>
