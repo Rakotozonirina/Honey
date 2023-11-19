@@ -351,4 +351,7 @@ body::-webkit-scrollbar-thumb {
   #about{
     height: 120dvh;
   }
+  #project{
+    height: 250dvh;
+  }
 }

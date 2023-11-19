@@ -49,7 +49,7 @@ return (
         </section>
     </section>
     <section className='w-full h-[100dvh] relative' id="about">
-        <section className='education h-[100dvh]'>
+        <section className='education flex flex-col gap-16 h-[100dvh]'>
             <article className='relative flex items-center justify-center w-full h-[25dvh]'>
                 <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='max-sm:scale-[0.8] max-sm:left-[-10%] sm:max-md:scale-[0.7] absolute md:max-lg:scale-[0.8] lg:max-xl:scale-[0.9] top-[4%] left-0'>
                     <img src={CircleOne} alt=" circle one" />
@@ -152,7 +152,7 @@ return (
         <article className='competence-article flex justify-center items-center h-[20dvh]'>
             <motion.h2 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='competence-heading drop-shadow-lg font-epilogue'>Mes projets</motion.h2>
         </article>
-        <section className='h-[130dvh] lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
+        <section className='h-[130dvh] content-card lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
             <Card/>
         </section>
     </section>
