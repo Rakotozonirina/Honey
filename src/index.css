@@ -95,6 +95,7 @@ body::-webkit-scrollbar-thumb {
 .education{
   width: min(90%, 1200px);
   margin-inline: auto;
+  padding-block: min(2rem);
 }
 .heading-educ{
   font-size: clamp(40px, 2vw + 1rem, 64px);
