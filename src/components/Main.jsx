@@ -13,6 +13,7 @@ import Css from '../assets/css.svg'
 import Card from './Card'
 import { Contact } from './Contact'
 import { motion } from 'framer-motion'
+import Tathie from '../assets/CV-Tathie.pdf'
 
 function Main() {
 return (
@@ -42,7 +43,7 @@ return (
         <section className='w-full flex justify-center items-center bg-amber-500 section-desc'>
             <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='hero-desc flex flex-col gap-5 max-sm:justify-center max-sm:gap-[2.5rem]'>
                 <p className='text-justify max-sm:w-full sm:max-md:w-full w-[80%] text-white leading-[27px] font-enriquetabold para-desc'>Je suis Designer UI & UX située à Madagascar. Ceci est une visualisation de mes compétences en tant que designer et je suis contente de les partager avec vous.Ci-desous, vous découvrirez une collection diversifiée de mes projets qui illustrent mon approche créative.</p>
-                <a href='../assets/CV-Tathie.pdf' download='CV-Tathie.pdf'>
+                <a href={Tathie} download='CV-Tathie.pdf'>
                     <button className='bg-stone-800 hover:bg-stone-700 duration-75 hover:shadow-xl w-fit bg-opacity-90 rounded-[20px] p-2.5 flex justify-center items-center text-white capitalize para-desc'>
                         télécharger mon cv
                     </button>
