@@ -13,21 +13,26 @@ import Css from '../assets/css.svg'
 import Card from './Card'
 import { Contact } from './Contact'
 import { motion } from 'framer-motion'
+import Tathie from '../assets/CV-Tathie.pdf'
 
 function Main() {
 return (
     <main>
-    <section className='w-full h-[auto] max-sm:h-[auto] sm:max-md:h-[auto] md:max-lg:h-[auto] bg-gradient-to-l from-amber-500 to-white'>
+    <section className='w-full super-hero h-[auto] max-sm:h-[auto] sm:max-md:h-[auto] md:max-lg:h-[auto] bg-gradient-to-l from-amber-500 to-white'>
         <section className='hero h-[84dvh] max-sm:flex-col max-sm:h-[120dvh] sm:max-md:h-[130dvh] md:max-lg:h-[120dvh] sm:max-md:flex-col md:max-lg:flex-col flex justify-around items-center'>
-            <article>
+            <article className="py-2">
                 <h1 className='heading-hero drop-shadow-lg font-inikabold headingOne'>RAHAJANIRINA <br /> Nomenjanahary Tantely</h1>
                 <p className='font-inikaregular para-hero drop-shadow-lg headingOne'>UI & UX Designer</p>
                 <div className='w-full flex justify-around items-center h-[16dvh] headingOne'>
                     <div className='span-hero w-fit bg-zinc-300 cursor-pointer hover:bg-zinc-400 hover:rounded-xl duration-75'>
-                        <img src={Github} alt="github" />
+                        <a href="https://github.com/NOMENJANAHARYTantely">
+                            <img src={Github} alt="github" />
+                        </a>
                     </div>
                     <div className='span-hero w-fit bg-zinc-300 cursor-pointer hover:bg-zinc-400 hover:rounded-xl duration-75'>
-                        <img src={Linkdeen} alt="linkdeen" />
+                        <a href="https://www.linkedin.com/in/mamy-nomenjanahary-057585255/">
+                            <img src={Linkdeen} alt="linkdeen" />
+                        </a>
                     </div>
                 </div>
             </article>
@@ -38,25 +43,27 @@ return (
         <section className='w-full flex justify-center items-center bg-amber-500 section-desc'>
             <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='hero-desc flex flex-col gap-5 max-sm:justify-center max-sm:gap-[2.5rem]'>
                 <p className='text-justify max-sm:w-full sm:max-md:w-full w-[80%] text-white leading-[27px] font-enriquetabold para-desc'>Je suis Designer UI & UX située à Madagascar. Ceci est une visualisation de mes compétences en tant que designer et je suis contente de les partager avec vous.Ci-desous, vous découvrirez une collection diversifiée de mes projets qui illustrent mon approche créative.</p>
-                <button className='bg-stone-800 hover:bg-stone-700 duration-75 hover:shadow-xl w-fit bg-opacity-90 rounded-[20px] p-2.5 flex justify-center items-center text-white capitalize para-desc'>
-                    télécharger mon cv
-                </button>
+                <a href={Tathie} download='CV-Tathie.pdf'>
+                    <button className='bg-stone-800 hover:bg-stone-700 duration-75 hover:shadow-xl w-fit bg-opacity-90 rounded-[20px] p-2.5 flex justify-center items-center text-white capitalize para-desc'>
+                        télécharger mon cv
+                    </button>
+                </a>
             </motion.article>
         </section>
     </section>
     <section className='w-full h-[100dvh] relative' id="about">
-        <section className='education h-[100dvh]'>
+        <section className='education flex flex-col gap-16 h-[100dvh]'>
             <article className='relative flex items-center justify-center w-full h-[25dvh]'>
                 <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='max-sm:scale-[0.8] max-sm:left-[-10%] sm:max-md:scale-[0.7] absolute md:max-lg:scale-[0.8] lg:max-xl:scale-[0.9] top-[4%] left-0'>
                     <img src={CircleOne} alt=" circle one" />
                 </motion.div>
-                <motion.h1 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='font-epilogue drop-shadow-lg heading-educ'>Educations</motion.h1>
+                <motion.h1 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='font-epilogue drop-shadow-lg heading-educ py-2'>Educations</motion.h1>
             </article>
             <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='max-sm:scale-[0.8] max-sm:left-[-22%] max-sm:z-[-10] sm:max-md:left-[-18%] sm:max-md:z-[-10] sm:max-md:scale-[0.6] md:max-lg:scale-[0.7] md:max-lg:left-[-18%] lg:max-xl:scale-[0.8] lg:max-xl:left-[-14%] absolute left-[-6%] top-[14%]'>
                 <img src={CircleTwo} alt="circle two"/>
             </motion.div>
             <article className='grid nice w-full h-[60dvh]'>
-                    <div className='flex max-sm:flex-col max-sm:justify-around sm:max-md:justify-around sm:max-md:flex-col'>
+                    <div className='flex max-sm:flex-col max-sm:justify-around sm:max-md:justify-around sm:max-md:flex-col py-2'>
                     <article className='md:max-lg:w-[80%] lg:max-xl:w-[80%] xl:w-[80%] xl:flex xl:items-center lg:max-xl:flex lg:max-xl:items-center md:max-lg:flex md:max-lg:items-center'>
                         <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='child-article'>
                             <h2 className='font-epilogue text-yellow-600 text-justify heading-two-education drop-shadow-lg'>ESSGAM - Ecole Saint Gabriel Mahajanga</h2>
@@ -71,7 +78,7 @@ return (
                         </div>
                     </div>
                     </div>
-                    <div className='flex max-sm:flex-col max-sm:justify-around sm:max-md:justify-around sm:max-md:flex-col'>
+                    <div className='py-2 flex max-sm:flex-col max-sm:justify-around sm:max-md:justify-around sm:max-md:flex-col'>
                     <article className='md:max-lg:w-[80%] lg:max-xl:w-[80%] xl:w-[80%] xl:flex xl:items-center lg:max-xl:flex lg:max-xl:items-center md:max-lg:flex md:max-lg:items-center'>
                         <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='child-article'>
                             <h2 className='font-epilogue text-yellow-600 text-justify heading-two-education drop-shadow-lg'>SAYNA</h2>
@@ -87,22 +94,22 @@ return (
                     </div>
                     </div>
             </article>
-            <div className='flex justify-center items-center h-[15dvh]'>
+            <div className='flex justify-center items-center'>
                 <motion.div initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='w-fit'>
                     <img src={SeparatorBlack} alt="Separator Black" />
                 </motion.div>
             </div>
         </section>
     </section>
-    <section className='w-full h-[80dvh] relative max-sm:h-[130dvh]'>
-        <article className='skill-article h-[20dvh] flex justify-center items-center'>
+    <section className='w-full h-[80dvh] skills py-2 relative max-sm:h-[130dvh]'>
+        <article className='skill-article  py-4 flex justify-center items-center'>
             <motion.h2 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='font-epilogue drop-shadow-lg heading-educ'>Mes compétences</motion.h2>
         </article>
         <section className='skill-section grid grid-cols-4 h-[60dvh] max-sm:h-[110dvh] gap-4 max-sm:gap-4'>
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Figma} alt="figma" />
+                        <img src={Figma} alt="figma" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>Figma</h2>
@@ -112,7 +119,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Xd} alt="xd" />
+                        <img src={Xd} alt="xd" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>Adobe XD</h2>
@@ -122,7 +129,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Html} alt="html" />
+                        <img src={Html} alt="html" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>HTML</h2>
@@ -132,7 +139,7 @@ return (
             <div>
                 <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} className='skill'>
                     <div>
-                        <img src={Css} alt="css" />
+                        <img src={Css} alt="css" className='competence' />
                     </div>
                     <article>
                         <h2 className='text-[1.5rem] font-epilogue'>CSS</h2>
@@ -144,16 +151,16 @@ return (
             <img src={CircleThree} alt="circle three" />
         </motion.div>
     </section>
-    <section className='w-full h-[150dvh] lg:max-xl:h-[200dvh] md:max-lg:h-[200dvh] sm:max-md:h-[400dvh] max-sm:h-[400dvh] bg-stone-200 bg-opacity-80' id='project'>
+    <section className='w-full h-[150dvh] py-4 lg:max-xl:h-[200dvh] md:max-lg:h-[200dvh] sm:max-md:h-[400dvh] max-sm:h-[400dvh] bg-stone-200 bg-opacity-80' id='project'>
         <article className='competence-article flex justify-center items-center h-[20dvh]'>
             <motion.h2 initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='competence-heading drop-shadow-lg font-epilogue'>Mes projets</motion.h2>
         </article>
-        <section className='h-[130dvh] lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
+        <section className='h-[130dvh] content-card lg:max-xl:h-[180dvh] md:max-lg:h-[180dvh] sm:max-md:h-[380dvh] max-sm:h-[380dvh] grid competence-section'>
             <Card/>
         </section>
     </section>
-    <section className="w-full h-[70dvh] max-sm:h-[80dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
-        <section className='nice-contact grid  max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
+    <section className="w-full py-4 h-[70dvh] contact max-sm:h-[100dvh] sm:max-md:h-[80dvh] flex justify-center items-center" id='contact'>
+        <section className='nice-contact grid max-sm:gap-4 sm:max-md:gap-5 md:max-lg:gap-4'>
             <motion.article initial={{ opacity: 0, scale: 0.5 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                 <h2 className='font-semibold font-epilogue text-[1.5rem] drop-shadow-lg'>Travaillons ensemble</h2>
                 <p className='font-epilogue text-[17px]'>Si vous souhaitez collaborer avec Moi, n'hésitez pas à me contacter à toute date et heure qui vous conviennent le mieux</p>

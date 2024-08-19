@@ -21,9 +21,9 @@ return (
             </div>
             <div>
                 <ul className={`flex items-center ${show ? 'max-sm:text-center max-sm:flex max-sm:flex-col max-sm:fixed max-sm:p-[5rem] max-sm:z-[10] max-sm:top-0 max-sm:bottom-0 max-sm:right-0 max-sm:bg-amber-400' : 'max-sm:hidden'} gap-12 p-1.5 uppercase font-inikaregular nav-ul`}>
-                    <li className='cursor-pointer hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('about')}>à propos de moi</li>
-                    <li className='cursor-pointer hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('project')}>mes projets</li>
-                    <li className='cursor-pointer hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('contact')}>contacts</li>
+                    <li className='cursor-pointer  p-1.5 hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('about')}>à propos de moi</li>
+                    <li className='cursor-pointer p-1.5 hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('project')}>mes projets</li>
+                    <li className='cursor-pointer p-1.5 hover:text-black/60 duration-75 drop-shadow-lg' onClick={() => scrollToElement('contact')}>contacts</li>
                     <li className='absolute top-[2%] left-[6%]'>
                         <div className='cursor-pointer sm:hidden' onClick={() => handleShow(false)}>
                             <FaX/>

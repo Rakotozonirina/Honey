@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 @font-face{
   font-family: "InikaBold";
   src: url("./assets/Inika-Bold.ttf");
@@ -83,6 +95,7 @@ body::-webkit-scrollbar-thumb {
 .education{
   width: min(90%, 1200px);
   margin-inline: auto;
+  padding-block: min(2rem);
 }
 .heading-educ{
   font-size: clamp(40px, 2vw + 1rem, 64px);
@@ -315,4 +328,31 @@ body::-webkit-scrollbar-thumb {
 		opacity: 1;
 		transform: translateY(0px);
 	}
+}
+@media (max-height: 390px){
+  .animationHero{
+    max-width: 100%;
+    display: block;
+    height: 50dvh;
+  }
+  .competence{
+    max-width: 100%;
+    display: block;
+    height: 20dvh;
+  } 
+  .card-article{
+    padding-block: 1rem;
+  }
+  .contact{
+    height: 140dvh;
+  }
+  .skills{
+    height: 100dvh;
+  }
+  #about{
+    height: 120dvh;
+  }
+  #project{
+    height: 250dvh;
+  }
 }

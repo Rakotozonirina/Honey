@@ -69,7 +69,7 @@ return (
                 <div className='w-full'>
                     <img src={Data.image} alt={Data.alt} className='h-[40dvh] sm:max-md:w-[100dvw] max-sm:w-[100dvw] w-[100dvw] shadow-xl hover:rounded-xl duration-75 object-cover' />
                 </div>
-                <article className='h-[20dvh] py-[3em]'>
+                <article className='h-[20dvh] py-[3em] card-article'>
                     <h2 className='font-epilogue card-heading drop-shadow-lg'>{Data.title}</h2>
                     <p className='font-epilogue card-para'>{Data.para}</p>
                 </article>
